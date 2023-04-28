@@ -5,7 +5,7 @@ import maleProfile from './images/maleProfile.jpg';
 
 const Employees = () => {
 
-    const [selectedTeam, setTeam] = useState("TeamB");
+    const [selectedTeam, setTeam] = useState("TeamA");
     
     const [employees, setEmployees] = useState([
         {
@@ -81,7 +81,7 @@ const Employees = () => {
             <div className="card-collection">
                 {
                   employees.map((employee) => (
-                    <div id={employee.id} className="card m-2" style={{ cursor: "pointer"}} onClick={handleEmployeeCardClick}>
+                    <div id={employee.id} className={(employee.teamName === selectedTeam ? 'card m-2 standout' : 'card m-2')} style={{ cursor: "pointer"}} onClick={handleEmployeeCardClick}>
                       
                       {(employee.gender === 'male')?<img src={maleProfile} className="card-img-top" />
                                                    :<img src={femaleProfile} className="card-img-top" />}
