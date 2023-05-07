@@ -1,10 +1,9 @@
-const Header = ({ selectedTeam, teamMemberCount }) => {
+const NotFound = () => {
     return (
         <header className="container">
             <div className="row justify-content-center mt-3 mb-4">
                 <div className="col-8">
-                    <h1>Team Member Allocation</h1>
-                    <h3>{selectedTeam} has {teamMemberCount} members</h3>
+                    <h1 className="text-danger">404 - Page Not Found</h1>
                 </div>
             </div>
         </header>
@@ -12,4 +11,4 @@ const Header = ({ selectedTeam, teamMemberCount }) => {
     )
 }
 
-export default Header
+export default NotFound
