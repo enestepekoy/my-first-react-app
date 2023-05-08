@@ -1,10 +1,8 @@
 import logo from './logo.svg';
-import './App.css';
 import './styles.css';
 import Footer from './Footer';
 import Header from './Header';
 import Employees from './Employees';
-import Counter from './Counter';
 import GroupedTeamMembers from './GroupedTeamMembers';
 import NotFound from './NotFound';
 import Nav from './Nav';
@@ -156,7 +154,6 @@ function App() {
         </Route>
       </Routes>
       <Footer />
-      <Counter />
     </Router>
 
 
