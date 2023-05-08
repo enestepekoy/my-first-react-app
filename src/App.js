@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './styles.css';
 import Footer from './Footer';
 import Header from './Header';
@@ -6,9 +5,6 @@ import Employees from './Employees';
 import GroupedTeamMembers from './GroupedTeamMembers';
 import NotFound from './NotFound';
 import Nav from './Nav';
-import TeamMemberCard from './TeamMemberCard';
-import TeamMembers from './TeamMembers';
-import Teams from './Teams';
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
