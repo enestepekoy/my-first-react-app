@@ -8,13 +8,15 @@ import Counter from './Counter';
 import GroupedTeamMembers from './GroupedTeamMembers';
 import NotFound from './NotFound';
 import Nav from './Nav';
+import TeamMemberCard from './TeamMemberCard';
+import TeamMembers from './TeamMembers';
+import Teams from './Teams';
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 
 function App() {
-  // const [employees, setEmployees] = useState(JSON.parse(localStorage.getItem('employeeList')) [I Hi
   const [selectedTeam, setTeam] = useState(JSON.parse(localStorage.getItem('selectedTeam')) || "TeamA");
 
   const [employees, setEmployees] = useState(JSON.parse(localStorage.getItem('employeeList')) || [
